@@ -1,0 +1,23 @@
+<div class="yk-container">
+    <div class="side-nav-upper-content">
+    </div>
+    <div class="side-nav-lower-content">
+        <div class="grid">
+            <mat-card *ngFor="let collection of cardData | keyvalue" routerLink="/{{collection.key}}">
+                <mat-card-content>
+                  <div *ngIf="collection.key === 'Angular'" class="image-container"><img class="image-angular" [src]="imgAngular" alt="Angular"></div>
+                  <div *ngIf="collection.key === 'React'" class="image-container"><img class="image-react" [src]="imgReact" alt="React"></div>
+                  <div *ngIf="collection.key === 'Vue'" class="image-container"><img class="image-vue" [src]="imgVue" alt="Vue"></div>
+                </mat-card-content>
+                <mat-card-title class="custom-card-title">{{ collection.key }}</mat-card-title>
+              </mat-card>
+        </div>
+    </div>
+</div>
+<div class="popup-bg-cover" *ngIf="loader"></div>
+<div id="container" *ngIf="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <p>yk-p-angular2 LOADING...</p>
+</div>

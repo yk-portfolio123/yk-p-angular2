@@ -1,0 +1,34 @@
+<div class="container">
+    <!-- <button type="button" class="btn btn-outline-success" routerLink="/studypage">戻る</button>
+    <button *ngIf="!edited" type="button" class="btn btn-outline-success" (click)="edited = !edited">編集</button>
+    <button *ngIf="edited" type="button" class="btn btn-outline-success" (click)="editData()">保存</button>
+    <button *ngIf="edited" type="button" class="btn btn-outline-success" (click)="edited = !edited">取り消し</button>
+    <button *ngIf="!edited" mat-button (click)="before()">&lt;</button>
+    <button *ngIf="!edited" mat-button (click)="after()">></button> -->
+    
+    <div class="row">
+        <div class="mt-5">
+            <div class="card border-0 shadow p-3">
+                <div *ngIf="!edited" class="information">
+                    <h1 class="text-center">{{title}}</h1>
+                </div>
+                    <div class="responsive" id="video"></div>
+                <div *ngIf="!edited">
+                    <div class="content" [innerHTML]='htmlContent'></div>
+                </div>
+                <div *ngIf="edited" class="editer">
+                    <div class="title">
+                        <mat-form-field class="example-form-field" style="width: 100%;">
+                            <mat-label>タイトル</mat-label>
+                            <input matInput type="text" [(ngModel)]="title">
+                            <button *ngIf="title" matSuffix mat-icon-button aria-label="Clear" (click)="title=''">
+                            <mat-icon>close</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </div>
+                    <angular-editor [placeholder]="'Enter text here...'" [(ngModel)]="htmlContent" [config]="config"></angular-editor>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

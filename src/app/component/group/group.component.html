@@ -1,0 +1,15 @@
+<!-- <button type="button" class="btn btn-outline-success" routerLink="/studypage">戻る</button>
+<button type="button" class="btn btn-outline-success" (click)="addpage()">新規追加</button>
+<button type="button" class="btn btn-outline-success" (click)="deleteSession()">Delete</button> -->
+<div class="grid">
+<mat-card *ngFor="let item of cardList;let i = index" routerLink="/{{ item.category }}/{{ item.docid }}">
+    <div class="m-3">
+      <div class="card-text">
+        <label class="symbol-text">{{ item.title }}</label>
+      </div>
+      <div class="card-image">
+        <img src="https://img.youtube.com/vi/{{ item.url }}/mqdefault.jpg">
+      </div>
+    </div>
+</mat-card>
+</div>

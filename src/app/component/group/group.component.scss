@@ -1,0 +1,17 @@
+img{
+    width: 320px;
+}
+.grid {
+    display: grid;
+    gap: 24px;
+    margin: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 430px));
+}
+.card-text{
+    label{
+        font-size: 18px;
+    }
+}
+.card-image{
+    text-align: center;
+}

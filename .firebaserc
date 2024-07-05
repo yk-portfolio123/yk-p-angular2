@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "yk-p-angular2": {
+      "hosting": {
+        "yk-p-angular2": [
+          "yk-p-angular2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "yk-p-angular2"
+  }
+}

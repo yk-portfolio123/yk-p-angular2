@@ -1,0 +1,57 @@
+<mat-toolbar color="primary">
+    <a routerLink="/daytrade">yk-p-angular2</a>
+    <span class="ms-5">
+      <a mat-button href="https://www.myfxbook.com/members/FXKOJA/real-10/10169328" target="_blank" class="header-button">
+        <mat-icon class="icon">dashboard</mat-icon>
+        <span  class="label">Dashboard</span>
+      </a>
+    </span>
+    <span>
+      <a mat-button routerLink="weekly" class="header-button">
+        <mat-icon class="icon">library_books</mat-icon>
+        <span class="label">週報</span>
+      </a>
+    </span>
+    <span>
+      <a mat-button class="header-button"><!-- routerLink="scalping" -->
+        <mat-icon class="icon disabled">swap_vert</mat-icon>
+        <span class="label disabled">スキャルピング</span>
+      </a>
+    </span>
+    <span>
+      <a mat-button class="header-button"><!-- routerLink="daytrade" -->
+        <mat-icon class="icon disabled">trending_up</mat-icon>
+        <span class="label disabled">デイトレード</span>
+      </a>
+    </span>
+    <span>
+      <a mat-button class="header-button"><!-- routerLink="swing" -->
+        <mat-icon class="icon disabled">shuffle</mat-icon>
+        <span class="label disabled">スイング</span>
+      </a>
+    </span>
+    <span>
+      <a mat-button class="header-button"><!-- routerLink="highleve" -->
+        <mat-icon class="icon disabled">flight</mat-icon>
+        <span class="label disabled">ハイレバ</span>
+      </a>
+    </span>
+    <span>
+      <a mat-button class="header-button"><!-- routerLink="backtest" -->
+        <mat-icon class="icon disabled">fast_rewind</mat-icon>
+        <span class="label disabled">過去検証</span>
+      </a>
+    </span>
+    <span>
+      <a mat-button class="header-button"><!-- routerLink="studypage" -->
+        <mat-icon class="icon disabled">airplay</mat-icon>
+        <span class="label disabled">勉強動画</span>
+      </a>
+    </span>
+    <span class="logout">
+      <a mat-button (click)="logout()" class="header-button">
+        <mat-icon class="icon">logout</mat-icon>
+        <span class="label">ログアウト</span>
+      </a>
+    </span>
+  </mat-toolbar>

@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "yk-p-angular2",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
